@@ -1,0 +1,26 @@
+{
+  "name": "xzy_self-defining",
+  "version": "1.0.1",
+  "repository": "https://github.com/your-eight-nine/xzy_utils.git",
+  "author": "xuezhiying <2621225969@qq.com>",
+  "main": "dist/xzy_self-defining.js",
+  "description": "大前端自定义工具函数库",
+  "keywords": [
+    "utils",
+    "array",
+    "object",
+    "function",
+    "promise",
+    "axios"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack --watch"
+  },
+  "devDependencies": {
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1"
+  },
+  "dependencies": {}
+}

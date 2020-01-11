@@ -1,4 +1,4 @@
-export function call (fn,obj,...args) {
+export default function call (fn,obj,...args) {
   if (obj === undefined || obj === null) {
     obj = window
   }

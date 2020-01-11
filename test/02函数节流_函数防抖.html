@@ -9,9 +9,7 @@
 <body>
   <button id="throttle">测试函数节流</button>
   <button id="debounce">测试函数防抖</button>
-
-
-
+  <script type="text/javascript" src="../dist/xzy_self-defining.js"></script>
   <script>
     /* 处理点击事件的回调函数 */
     function handleClick(event) { // 处理事件的回调
@@ -21,8 +19,8 @@
     document.getElementById('throttle').onclick = handleClick
     // document.getElementById('throttle').onclick = _.throttle(handleClick, 2000, { 'trailing': false })
     // document.getElementById('debounce').onclick = _.debounce(handleClick, 2000)
-    document.getElementById('throttle').onclick = throttle(handleClick, 2000)
-    document.getElementById('debounce').onclick = debounce(handleClick, 2000)
+    document.getElementById('throttle').onclick = xUtils.throttle(handleClick, 2000)
+    document.getElementById('debounce').onclick = xUtils.debounce(handleClick, 2000)
 
   </script>
 </body>

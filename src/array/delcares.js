@@ -30,7 +30,7 @@ export function filter (array,callback) {
   return arr
 }
 
-export function find (callback) {
+export function find (array,callback) {
   for (let index = 0; index < array.length; index++) {
     const element = array[index];
     const result = callback(element,index)
@@ -41,7 +41,7 @@ export function find (callback) {
   return undefined
 }
 
-export function findIndex (callback) {
+export function findIndex (array,callback) {
   for (let index = 0; index < array.length; index++) {
     const element = array[index];
     const result = callback(element,index)
@@ -52,7 +52,7 @@ export function findIndex (callback) {
   return -1
 }
 
-export function every (callback) {
+export function every (array,callback) {
   for (let index = 0; index < array.length; index++) {
     const element = array[index];
     const result = callback(element,index)
@@ -63,7 +63,7 @@ export function every (callback) {
   return true
 }
 
-export function some (callback) {
+export function some (array,callback) {
   for (let index = 0; index < array.length; index++) {
     const element = array[index];
     const result = callback(element,index)

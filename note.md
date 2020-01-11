@@ -15,3 +15,5 @@
     4.运行打包
       1)可以用webpack devserver
       2)可以直接运行npx webpack --watch  (监视文件,一旦更改文件,则自动生成打包文件)
+## lodash
+  前身库:underscore --- 下划线_
