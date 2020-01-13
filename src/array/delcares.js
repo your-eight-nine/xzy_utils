@@ -19,7 +19,7 @@ export function reduce (array,callback,initValue) {
 }
 
 export function filter (array,callback) {
-  const arr = []
+  let arr = []
   for (let index = 0; index < array.length; index++) {
     const element = array[index];
     const result = callback(element,index)
