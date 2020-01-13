@@ -15,20 +15,16 @@
     function dec2bin (decNum) {
       // 创建一个用于保存二进制位的stack
       const stack = new xUtils.Stack()
-      
-      // 对decNum不断除2取余, 并保存stack中
-      while(decNum>0) {
-        const remainder = decNum % 2
-        stack.push(remainder)
-        decNum = Math.floor(decNum / 2) 
+      while (decNum > 0) {
+        const yuNum = decNum % 2
+        stack.push(yuNum)
+        decNum = Math.floor(decNum / 2)
       }
-     
-      // 依次取出stack中所有元素, 并拼接成字符串
       let result = ''
-      while(!stack.isEmpty()) {
+      // if (!stack.isEmpty()) {
+      while (stack.size() >0) {
         result += stack.pop()
       }
-
       return result
     }
     

@@ -1,6 +1,6 @@
 {
   "name": "xzy_self-defining",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "repository": "https://github.com/your-eight-nine/xzy_utils.git",
   "author": "xuezhiying <2621225969@qq.com>",
   "main": "dist/xzy_self-defining.js",
