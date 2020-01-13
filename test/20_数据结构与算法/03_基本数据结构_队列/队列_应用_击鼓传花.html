@@ -7,13 +7,13 @@
   <title>队列_应用</title>
 </head>
 <body>
-  <script src="../../../dist/atguigu-utils.js"></script>
+  <script src="../../../dist/xzy_self-defining.js"></script>
   <script>
     /* 
     利用自定义队列实现击鼓传花游戏函数
     */
     function passGame(names, num) {
-      const queue = new aUtils.Queue()
+      const queue = new xUtils.Queue()
       names.forEach((name, index) => {
         queue.enqueue({name, index})
       })

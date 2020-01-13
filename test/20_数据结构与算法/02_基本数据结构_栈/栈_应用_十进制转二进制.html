@@ -7,14 +7,14 @@
   <title>栈_应用_十进制转二进制</title>
 </head>
 <body>
-  <script src="../../../dist/190719-utils.js"></script>
+  <script src="../../../dist/xzy_self-defining.js"></script>
   <script>
     /* 
     使用Stack封装一个功能函数: 十进制(decimal)转二进制(binary)
     */
     function dec2bin (decNum) {
       // 创建一个用于保存二进制位的stack
-      const stack = new aUtils.Stack()
+      const stack = new xUtils.Stack()
       
       // 对decNum不断除2取余, 并保存stack中
       while(decNum>0) {

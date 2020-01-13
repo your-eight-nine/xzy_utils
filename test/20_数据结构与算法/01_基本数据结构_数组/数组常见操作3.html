@@ -47,6 +47,28 @@
     */
     
     const arr = [3, 1, 14, 9, 7, 6]
+    let arr1 = []
+    arr.forEach(item => {
+      if (item%2 === 1) {
+        arr1.push(item)
+      }
+    })
+    console.log(arr1);
+
+    console.log(arr.find((item,index) => item%2 ===1 && index%2===1));
+    console.log(arr.findIndex((item,index) => item%2 ===1 && index%2===1));
+    console.log(arr.filter((item,index) => item%2===1 && index%2===1));
+    let arr2 = arr.map(item =>{
+      return item > 10
+    })
+    console.log(arr2);
+    console.log(arr.reduce((pre,item,index)=>{
+      return pre + (item%2===1 && index%2===1 ? item : 0)
+    },0));
+    console.log(arr.some((item,index) => index %2 ===0 || (index % 2 === 1 && item %2 ===1)));
+    console.log(arr.every((item,index) => index %2 ===0 || (index % 2 === 1 && item %2 ===1)));
+    // console.log(arr.splice(2,6));
+    console.log(arr.slice(2,6));
 
   </script>
 </body>
