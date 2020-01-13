@@ -404,7 +404,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"selectSort\", function() { return selectSort; });\nfunction selectSort (arr){\r\n  const len = arr.length\r\n  for(let i = 0;i < len -1;i++){\r\n    const minIndex = i\r\n    for(let j = i+1;j < len;j++){\r\n      if(arr[minIndex] > j){\r\n        minIndex = j\r\n      }\r\n    }\r\n    if(minIndex !== i){\r\n      [arr[i], arr[minIndex]] = [arr[minIndex], arr[i]]\r\n    }\r\n  }\r\n  return arr\r\n}\n\n//# sourceURL=webpack://xUtils/./src/sort/selectSort.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"selectSort\", function() { return selectSort; });\nfunction selectSort (arr){\r\n  const len = arr.length\r\n  for(let i = 0;i < len -1;i++){\r\n    let minIndex = i\r\n    for(let j = i+1;j < len;j++){\r\n      if(arr[minIndex] > arr[j]){\r\n        minIndex = j\r\n      }\r\n    }\r\n    if(minIndex !== i){\r\n      [arr[i], arr[minIndex]] = [arr[minIndex], arr[i]]\r\n    }\r\n  }\r\n  return arr\r\n}\n\n//# sourceURL=webpack://xUtils/./src/sort/selectSort.js?");
 
 /***/ }),
 
